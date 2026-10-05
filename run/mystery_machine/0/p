@@ -1,0 +1,9 @@
+FoamFile { format ascii; class volScalarField; object p; }
+dimensions      [1 -1 -2 0 0 0 0];
+internalField   uniform 91000;
+boundaryField {
+    inlet { type fixedValue; value uniform 91000; }
+    outlet { type zeroGradient; value uniform 91000; }
+    tunnelWalls { type zeroGradient; value uniform 91000; }
+    mysteryMachine { type zeroGradient; value uniform 91000; }
+}

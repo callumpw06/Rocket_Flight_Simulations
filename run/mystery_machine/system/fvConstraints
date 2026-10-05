@@ -1,0 +1,24 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvConstraints;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+limitp
+{
+    type            limitPressure;
+    min             5000;
+    max             1000000;
+}
+
+limitT
+{
+    type            limitTemperature;
+    select          all;
+    min             50;
+    max             5000;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
